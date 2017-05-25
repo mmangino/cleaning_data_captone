@@ -67,4 +67,6 @@ by_subject_and_activity <- ddply(limited, c("subjectid", "activityname"), summar
       average_anglexgravitymean=mean(anglexgravitymean),
       average_angleygravitymean=mean(angleygravitymean),
       average_anglezgravitymean=mean(anglezgravitymean))
+
+write.table(by_subject_and_activity,file="output_data.txt",row.name=FALSE)
       
